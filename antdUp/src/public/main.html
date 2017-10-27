@@ -1,0 +1,70 @@
+<html>
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.useso.com/css?family=Tangerine|Inconsolata|Droid+Sans">
+
+    <style>
+        div#test{
+            font-family: 'Tangerine',serif;
+            font-size: 48px;
+        }
+        p#link1{
+            font-family: 'Tangerine',serif;
+        }
+
+    </style>
+
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div id="test">
+    <h1>Main Page</h1>
+</div>
+<p>Register & Login</p>
+<form action="test.jsp" method="post">
+    账号 :
+    <input type="text" id="name" />
+    <br/><br/>
+    密码 :
+    <input type="text" id="pwd" />
+    <br/><br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp
+    <div><a href="/add" id="add">EXTRA</a></div>
+    <input type="button" value="Submit" id="x">
+</form>
+
+</body>
+
+    <script type="text/javascript">
+
+        var after_login=function(data,status){
+            if (status=='success'){
+                alert(data+'--'+status) ;
+            }
+            else alert('login refused') ;
+
+        }
+
+        $(document).ready(function(){
+            $("#x").click(function(){
+                var name    =   $("#name").val() ;
+                var pwd     =   $("#pwd").val() ;
+                $.post('http://127.0.0.1:3000/login',
+                {
+                    name    :   name ,
+                    pwd     :   pwd
+                },
+//                        function(data,status){
+//                            alert(data+'--'+status) ;
+//                        }
+                        after_login
+                );
+//                $.get('add',function(data,status){
+//                    document.write(data) ;
+//                }) ;
+            });
+        });
+    </script>
+
+</html>

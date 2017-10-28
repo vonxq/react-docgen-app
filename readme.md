@@ -5,7 +5,9 @@
 具体功能如下:  
 1. 根据输入文件夹解析出组件文档  
 2. 点击左边文档树内容实现组件文档的查看  
-注意： **无状态组件无法获取显示组件名**  
+注意： **无状态组件无法获取显示组件名**  
+效果图:
+![img](https://github.com/vonxq/react-docgen-app/blob/master/img/app.png?raw=true)
 
 ## 使用范围  
 可以解析js or jsx 文件中写的组件    
@@ -19,7 +21,7 @@ npm run dev & npm run server
 在页面输入自己想要解析的文件夹绝对路径即可   
 ```  
 
-##　为自己的组件写注释文档  
+## 为自己的组件写注释文档  
 props和method的说明字段支持markdown语法 
 prop的解析依赖于对组件propTypes的定义  
 注释均需要写在想要注释字段的上一行(支持组件、方法、prop的说明，可识别markdown)

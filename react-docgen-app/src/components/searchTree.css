@@ -1,0 +1,23 @@
+.tree-node{
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+.tree-node-title{
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+.search-matched-title{
+    color: #0168DF;
+}
+.tree-wrapper{
+    height: 450px;
+    width: 280px;    
+    overflow: auto;
+}
+.tree-wrapper-wrapper{
+    width: 260px;
+    height: 450px;
+    overflow: hidden;
+}

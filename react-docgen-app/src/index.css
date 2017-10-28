@@ -1,0 +1,23 @@
+@import '~antd/dist/antd.css';
+html,body{
+  width: 100%;
+  /* background-color: #2CBEF8;   */
+  background-color: #1AD392;  
+  height: 100%;
+  font-family: '微软雅黑' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.head{
+  /* margin: 0 auto; */
+  padding-top: 10px;
+  line-height: 40px;
+  text-align: center;
+}
+.question-icon{
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+  border: 1px solid white;
+  border-radius: 15px;
+  color: white;
+  background-color:#0051FF;
+}

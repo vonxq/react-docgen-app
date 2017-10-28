@@ -1,0 +1,19 @@
+/* 除开padding,height 490px */
+.card-root{
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    height: 500px;
+    overflow: hidden;    
+}
+/* height 100px（加上margin） */
+.card-head{
+    height: 80px;
+    /* float: left; */
+    margin: 10px;
+    overflow: auto;
+}
+.card-content{
+    height: 390px;
+    overflow: auto;    
+}

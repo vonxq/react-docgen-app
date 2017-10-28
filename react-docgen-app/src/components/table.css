@@ -1,0 +1,18 @@
+.table-column{
+    color: #EC9595;
+}
+.single-row{
+    /* font-weight: bold; */
+    font-size: 15px;
+    /* color: #857C7C;
+    background-color: #98F374; */
+}
+.double-row{
+    font-size: 15px;    
+    /* color: #E20000;
+    background-color: #FFFFFF;     */
+}
+.table-title{
+    font-size: 15px;
+    font-weight: bold;
+}
